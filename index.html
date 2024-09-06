@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="sobre.html"></link>
+
+    <title>Plano de Aula</title>
+    <style>
+        .destaque {
+            background-color: #ffffcc;
+            border: 1px solid #ffcc00;
+            padding: 10px;
+        }
+        .a {
+            padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+            border: none; /* Remove a borda padrão */
+            border-radius: 1.5rem; /* Borda arredondada */
+            background-color: #30475E; /* Cor de fundo do botão */
+            color: #F5F7F8; /* Cor do texto do botão */
+            font-size: 1rem; /* Tamanho da fonte */
+            cursor: pointer; /* Muda o cursor para indicar que é clicável */
+            text-decoration: none;
+        }
+        .title-home{
+            font-size: 2.5rem; /* Tamanho da fonte */
+            color: #222831; /* Cor do texto */
+            margin: 1.5rem 0; /* Margem acima e abaixo */
+            margin-top: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fundo_tela">
+        <header>
+            <h1 class="title-home">Ideias para Planos de Aula</h1>
+        </header>  
+        <main>            
+        <section>
+            <input type="text" placeholder="Procure por ideias de aulas, experimente digitar 'Aula 01' " id="campo-pesquisa">
+            <div class="button-container">
+                <button onclick="pesquisar()">Pesquisar</button>
+                <button id="btn-limpar" onclick="limparPesquisa()">Limpar Pesquisa</button>
+                <a class="a" href="sobre.html">Sobre o Projeto!!!</a>
+            </div>
+        </section>
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+        </section>
+        
+    </main>
+</div>
+    <footer>
+        <p>
+            2024 - Base de Planos de Aulas para Ensino Fundamental. 
+            Todos os direitos reservados | Entre em contato pelo email: mecoding01@gmail.com
+        </p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
